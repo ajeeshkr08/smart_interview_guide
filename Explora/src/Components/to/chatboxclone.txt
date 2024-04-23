@@ -1,0 +1,55 @@
+import React, { useState } from "react";
+import axios from "axios";
+import "./Chatbox.css";
+
+const ChatBox = () => {
+  const [messages, setMessages] = useState([]);
+
+  const handleSendMessage = (message) => {
+    const updatedMessages = [...messages, { text: message, sender: "user" }];
+    // Update state with the new array including the user message
+    setMessages(updatedMessages);
+
+    // Log user message and updated messages array
+    console.log(message);
+    console.log(updatedMessages);
+
+    // Simulate bot response after 1 second
+    setTimeout(() => {
+      // Update messages array again, adding the bot response
+      
+      setMessages(updatedMessagesWithBotResponse);
+      console.log(messages);
+    }, 5000);
+  };
+
+
+
+
+    const updatedMessages = [...messages, { text: message, sender: "user" }];
+    // Update state with the new array including the user message
+    setMessages(updatedMessages);
+    console.log(message);
+    console.log(updatedMessages);
+    fetchData();
+
+    const updatedMessagesWithBotResponse = [
+      ...updatedMessages,
+      {
+        text: response,
+        sender: "bot",
+      },
+    ];
+    setMessages(updatedMessagesWithBotResponse);
+  };
+  const fetchData = async () => {
+    console.log("hvhwihdvvvgbbbbbbbbbbbbbbbbbidbs");
+    const stream = await openai.chat.completions.create({
+      model: "gpt-3.5-turbo",
+      messages: [{ role: "system", content: "You are a helpful assistant." }],
+      stream: true,
+    });
+    for await (const chunk of stream) {
+      setResponse(chunk.choices[0]?.delta?.content || "");
+      console.log(response);
+    }

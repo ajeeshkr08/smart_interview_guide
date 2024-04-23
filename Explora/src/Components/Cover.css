@@ -1,0 +1,18 @@
+.Cover {
+  /* background-image: url("../assets/family_doctor.jpg"); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+
+.Title {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}

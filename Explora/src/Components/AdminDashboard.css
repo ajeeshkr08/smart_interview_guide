@@ -1,0 +1,46 @@
+/* src/AdminDashboard.css */
+.admin-dashboard {
+  display: flex;
+}
+
+.sidebar {
+  height: 100vh;
+  flex: 0.2;
+  background-color: #282d37;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  padding: 10px 15px;
+  background-color: #5989af;
+  cursor: pointer;
+}
+.sidebar li label {
+  cursor: pointer;
+}
+.sidebar a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+.content {
+  flex: 0.8;
+}

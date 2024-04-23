@@ -1,0 +1,70 @@
+.language-page {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #282d37;
+  color: white;
+}
+
+.heading2 {
+  margin-top: 50px;
+  margin-left: 100px;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: 500;
+}
+.languages-container-cover {
+  height: 450px;
+  width: 90% auto;
+  /* border: 2px solid black; */
+}
+
+.languages-container {
+  width: 80%;
+  margin: 3% 10% 0 10%;
+  padding: 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: rgba(18, 27, 36, 0.716) 0px 9px 9px 9px; */
+}
+
+.language-card {
+  /* padding: 20px 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 500;
+  font-size: large;
+  margin: 20px 20px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ffffff88;
+  border-radius: 12px;
+  box-shadow: rgba(255, 255, 255, 0.484) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.language-card.selected {
+  background-color: #00e910;
+}
+
+.continue-button {
+  height: 50px;
+  float: right;
+  padding: 5px 20px;
+  margin-top: 30px;
+  margin-right: 200px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continue-button:hover {
+  background-color: #0056b3;
+}
